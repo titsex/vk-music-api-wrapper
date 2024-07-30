@@ -1,7 +1,7 @@
 {
 	"name": "vk-music-api-wrapper",
 	"description": "Lightweight wrapper on the vk music api",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"main": "./dist/index.cjs",
 	"types": "./dist/index.d.cts",
 	"exports": "./dist/index.cjs",
