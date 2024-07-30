@@ -1,0 +1,32 @@
+{
+	"name": "vk-music-api-wrapper",
+	"description": "Lightweight wrapper on the vk music api",
+	"version": "1.0.0",
+	"main": "./dist/index.cjs",
+	"types": "./dist/index.d.cts",
+	"exports": "./dist/index.cjs",
+	"directories": {
+		"lib": "src"
+	},
+	"files": ["dist"],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/titsex/vk-music-api-wrapper.git"
+	},
+	"author": "titsex",
+	"license": "MIT",
+	"type": "module",
+	"scripts": {
+		"format": "biome format ./src",
+		"lint": "biome lint ./src",
+		"type:check": "tsc --project ./tsconfig.json",
+		"build": "pnpm type:check && tsup"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^1.8.3",
+		"@types/node": "^22.0.0",
+		"tsup": "^8.2.3",
+		"tsx": "^4.16.2",
+		"typescript": "^5.5.4"
+	}
+}
