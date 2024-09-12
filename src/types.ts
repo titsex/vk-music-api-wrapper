@@ -274,13 +274,28 @@ export interface VKMusicAudioArtist {
 	is_followed?: boolean
 	is_album_cover?: boolean
 	can_follow?: boolean
-	photo: VKMusicAudioArtistPhoto[]
+	photo?: VKMusicAudioArtistPhoto[]
+	group?: VKMusicAudioArtistGroup[]
 }
 
 export interface VKMusicAudioArtistPhoto {
 	url: string
 	width: number
 	height: number
+}
+
+export interface VKMusicAudioArtistGroup {
+	id: number
+	name: string
+	screen_name: string
+	is_closed: number
+	type: string
+	is_admin: number
+	is_member: number
+	is_advertiser: number
+	photo_50: string
+	photo_100: string
+	photo_200: string
 }
 
 export interface VKMusicAudioGenre {
