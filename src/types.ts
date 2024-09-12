@@ -3,6 +3,8 @@ export enum VKMusicAPIBool {
 	TRUE = 1,
 }
 
+export type VKMusicScreenNameType = 'user' | 'group' | string
+
 export type VKMusicAudioAPIMethod =
 	| 'audio.get'
 	| 'audio.getAlbumsByArtist'
@@ -16,6 +18,7 @@ export type VKMusicAudioAPIMethod =
 	| 'audio.searchAlbums'
 	| 'audio.searchArtists'
 	| 'audio.searchPlaylists'
+	| 'utils.resolveScreenName'
 
 export interface VKMusicAudioGetMethodParams {
 	owner_id: string
@@ -301,4 +304,9 @@ export interface VKMusicAudioArtistGroup {
 export interface VKMusicAudioGenre {
 	id: number
 	name: string
+}
+
+export interface VKMusicResolveScreenNameMethodResponse {
+	object_id: number
+	type: VKMusicScreenNameType
 }
