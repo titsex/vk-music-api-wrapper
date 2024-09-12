@@ -1,16 +1,14 @@
 {
 	"name": "vk-music-api-wrapper",
 	"description": "Lightweight wrapper on the vk music api",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"main": "./dist/index.cjs",
 	"types": "./dist/index.d.cts",
 	"exports": "./dist/index.cjs",
 	"directories": {
 		"lib": "src"
 	},
-	"files": [
-		"dist"
-	],
+	"files": ["dist"],
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/titsex/vk-music-api-wrapper.git"
